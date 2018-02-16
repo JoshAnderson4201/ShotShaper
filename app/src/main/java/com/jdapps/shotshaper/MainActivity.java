@@ -29,7 +29,14 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("isFirstRun", true);
+        if(isFirstRun)
+        {
+            startActivity(new Intent(this, LaunchScreen.class));
+        }
         setContentView(R.layout.activity_main);
         init();
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun", false).apply();
     }
 }

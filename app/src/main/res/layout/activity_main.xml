@@ -13,7 +13,7 @@
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:srcCompat="@drawable/title"/>
 
     <ImageView
@@ -23,18 +23,8 @@
         android:padding="18dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="110dp"
         app:srcCompat="@drawable/challengebtn"/>
-
-    <ImageView
-        android:id="@+id/random"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:padding="18dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        app:srcCompat="@drawable/randombtn"/>
 
     <ImageView
         android:id="@+id/custom"
@@ -43,7 +33,17 @@
         android:padding="18dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
-        app:srcCompat="@drawable/custombtn"/>
+        android:layout_marginTop="210dp"
+        app:srcCompat="@drawable/customshots"/>
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:padding="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        app:srcCompat="@drawable/editclubs"/>
 
 </RelativeLayout>

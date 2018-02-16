@@ -24,6 +24,6 @@ public class Challenge extends AppCompatActivity
 
     public void displayStreak(int number) {
         TextView displayScore = findViewById(R.id.streakScore);
-        displayScore.setText("" + number);
+        displayScore.setText(Integer.toString(number));
     }
 }
