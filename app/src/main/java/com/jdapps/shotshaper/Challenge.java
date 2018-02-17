@@ -14,14 +14,15 @@ public class Challenge extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenge);
+        clubStore.loadClubs(this);
         displayStreak(0);
-        displayClubName();
     }
 
     public void increaseScore(View view)
     {
         minInteger += 1;
         displayStreak(minInteger);
+        displayClubName();
     }
 
     public void displayStreak(int number)
@@ -32,7 +33,6 @@ public class Challenge extends AppCompatActivity
 
     public void displayClubName()
     {
-        clubStore.loadClubs(this);
         TextView displayClubName = findViewById(R.id.clubName);
         displayClubName.setText(clubStore.randomClub());
     }

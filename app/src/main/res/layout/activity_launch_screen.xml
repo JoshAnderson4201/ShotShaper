@@ -21,6 +21,7 @@
 
     <EditText
         android:id="@+id/inputWood"
+        android:inputType="textCapWords"
         android:layout_toLeftOf="@id/addWoodButton"
         android:layout_below="@+id/addWoodLabel"
         style="@style/InputStyle"/>
@@ -40,6 +41,7 @@
 
     <EditText
         android:id="@+id/inputIron"
+        android:inputType="numberPassword"
         android:layout_toLeftOf="@id/addIronButton"
         android:layout_below="@+id/addIronLabel"
         style="@style/InputStyle"/>
@@ -59,6 +61,7 @@
 
     <EditText
         android:id="@+id/inputWedge"
+        android:inputType="textCapWords"
         android:layout_toLeftOf="@id/addWedgeButton"
         android:layout_below="@+id/addWedgeLabel"
         style="@style/InputStyle"/>

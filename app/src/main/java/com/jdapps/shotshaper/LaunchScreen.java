@@ -11,8 +11,14 @@ import android.widget.EditText;
 public class LaunchScreen extends AppCompatActivity
 {
     ClubStore clubStore = new ClubStore();
-    EditText woodInputEdit;
+
+    EditText woodInput;
+    EditText ironInput;
+    EditText wedgeInput;
+
     Button addWood;
+    Button addIron;
+    Button addWedge;
     Button finish;
 
     @Override
@@ -25,17 +31,42 @@ public class LaunchScreen extends AppCompatActivity
 
     private void setup()
     {
-        woodInputEdit = findViewById(R.id.inputWood);
-
+        woodInput = findViewById(R.id.inputWood);
         addWood = findViewById(R.id.addWoodButton);
         addWood.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                String woodInputString = woodInputEdit.getText().toString();
+                String woodInputString = woodInput.getText().toString();
                 clubStore.addClub(woodInputString, 1);
-                woodInputEdit.setText("");
+                woodInput.setText("");
+            }
+        });
+
+        ironInput = findViewById(R.id.inputIron);
+        addIron = findViewById(R.id.addIronButton);
+        addIron.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                String ironInputString = ironInput.getText().toString();
+                clubStore.addClub(ironInputString, 2);
+                ironInput.setText("");
+            }
+        });
+
+        wedgeInput = findViewById(R.id.inputWedge);
+        addWedge = findViewById(R.id.addWedgeButton);
+        addWedge.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                String wedgeInputString =  wedgeInput.getText().toString();
+                clubStore.addClub(wedgeInputString, 3);
+                wedgeInput.setText("");
             }
         });
 
