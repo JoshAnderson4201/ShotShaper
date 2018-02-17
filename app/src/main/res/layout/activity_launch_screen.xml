@@ -12,7 +12,7 @@
         style="@style/titleStyle"/>
 
     <TextView
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/addWoodLabel"
         android:layout_below="@id/addClubTitle"
         android:layout_centerHorizontal="true"
@@ -68,4 +68,14 @@
         android:layout_alignBottom="@id/inputWedge"
         android:text="ADD"
         style="@style/AddButtonStyle"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finishButton"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/addWedgeButton"
+        android:layout_alignLeft="@id/inputWedge"
+        android:layout_below="@id/addWedgeButton"
+        android:text="FINISH"/>
 </RelativeLayout>

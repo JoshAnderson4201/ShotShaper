@@ -37,6 +37,5 @@ public class MainActivity extends AppCompatActivity
         }
         setContentView(R.layout.activity_main);
         init();
-        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun", false).apply();
     }
 }
