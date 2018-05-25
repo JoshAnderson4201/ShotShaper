@@ -1,11 +1,9 @@
 <resources>
-    <string name="app_name">ShotShaper</string>
+    <string name="app_name">Shot Shaper</string>
 
-    <!-- Titles -->
-    <string name="addClubTitle">Add your clubs: </string>
-
-    <!-- Labels -->
-    <string name="addWoodLabel">Add all woods:</string>
-    <string name="addIronLabel">Add all irons:</string>
-    <string name="addWedgeLabel">Add all wedges:</string>
+    <string-array name="clubTypes">
+        <item>Wedge</item>
+        <item>Iron</item>
+        <item>Wood</item>
+    </string-array>
 </resources>
