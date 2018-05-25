@@ -1,4 +1,4 @@
-package com.jdapps.shotshaper;
+package com.jdapps.shotshaper2;
 
 import org.junit.Test;
 
